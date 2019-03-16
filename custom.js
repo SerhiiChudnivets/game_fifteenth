@@ -23,7 +23,10 @@ function moveCell(){
     let prevEmpty= $('[data-empty]');
     let CurPosition = Number(currentCell.attributes['data-cell'].value);
     let EmptyPosition= Number(prevEmpty.attr('data-cell'));
-    if (EmptyPosition == CurPosition+1 || EmptyPosition == CurPosition-1 || EmptyPosition == CurPosition-4 || EmptyPosition == CurPosition+4 ) {
+    if (
+        (EmptyPosition == CurPosition+1 && EmptyPosition != 5 &&  EmptyPosition != 9 && EmptyPosition != 13)
+        || (EmptyPosition == CurPosition-1 && EmptyPosition != 4 &&  EmptyPosition != 8 && EmptyPosition != 12)
+        || EmptyPosition == CurPosition-4 || EmptyPosition == CurPosition+4 ) {
         prevEmpty.html(currentCell.firstChild);
         prevEmpty.removeAttr('data-empty');
         currentCell.setAttribute('data-empty', 'true');
