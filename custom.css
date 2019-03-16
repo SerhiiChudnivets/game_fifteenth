@@ -66,4 +66,8 @@ body {
         height: 53px;
         font-size: 20px;
     }
+    .popup{
+        width: 100%;
+        left: 0;
+    }
 }
