@@ -22,6 +22,7 @@ body {
     text-shadow: 0px 6px 14px rgba(1, 1, 15, 1);
     border-radius: 3px;
     margin: 1px;
+
 }
 .popup{
     position: absolute;
@@ -42,4 +43,27 @@ body {
     padding: 8px 32px;
     display: inline-block;
     border-radius: 3px;
+}
+@media (max-width: 1199px) {
+.cell{
+    height: 80px;
+}
+}
+@media (max-width: 991px) {
+    .cell{
+        height: 60px;
+        font-size: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .cell{
+        height: 45px;
+        font-size: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .cell{
+        height: 53px;
+        font-size: 20px;
+    }
 }

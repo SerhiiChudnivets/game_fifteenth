@@ -9,7 +9,7 @@ initGame(arr.sort(compareRandom));
     for (let i=0;i<4;i++){
         game+= '<div class="row justify-content-center">'
             for(let j=0;j<4;j++){
-               game+= '<div class="col-1 cell" data-cell=" ' +count+ ' " onclick="moveCell();"><div class="cell__content" data_id="' + data[count-1] + '">' + data[count-1] + '</div></div>'
+               game+= '<div class="col-sm-1 col-2 cell" data-cell=" ' +count+ ' " onclick="moveCell();"><div class="cell__content" data_id="' + data[count-1] + '">' + data[count-1] + '</div></div>'
                 count++;
             }
         game+='</div>'
